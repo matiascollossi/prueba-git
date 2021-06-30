@@ -1,0 +1,40 @@
+.piepagina {
+  margin: 0px;
+  color: whitesmoke;
+  font-family: Roboto, sans-serif;
+  background-image: radial-gradient(#373535, black);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "somosolea frasefinal contacto";
+  
+    .somosolea {
+        grid-area: somosolea;
+        padding: 20px;
+        margin: 0px;
+        text-align: justify;
+        font-size: 14px;
+        font-family: roboto, sans-serif;
+    }
+
+    .frasefinal {
+        grid-area: frasefinal;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 14px;
+        font-family: roboto, sans-serif;
+    }
+
+    .contacto {
+        grid-area: contacto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        margin: 0px;
+        text-align: center;
+        font-size: 14px;
+        font-family: roboto, sans-serif; 
+    }
+}
+

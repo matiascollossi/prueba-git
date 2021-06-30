@@ -1,0 +1,87 @@
+@import '_header.scss';
+@import '_navegacion.scss';
+@import '_main.scss';
+@import '_footer.scss';
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.piepagina {
+    margin: 0px;
+    color:whitesmoke;
+    font-family: Roboto, sans-serif;
+    background-image: radial-gradient(rgb(55, 53, 53), black);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 
+    "somosolea frasefinal contacto";
+}
+
+.somosolea { 
+    grid-area: somosolea;
+    padding:20px;
+    margin: 0px;  
+    text-align: justify;
+    font-size: 14px;
+    font-family: roboto, sans-serif;
+}
+
+.frasefinal {
+    grid-area: frasefinal;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 34px;
+    font-family: roboto, sans-serif;
+}
+
+.contacto {
+    grid-area: contacto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    margin: 0px; 
+    text-align: center;
+    font-size: 14px;
+    font-family: roboto, sans-serif;
+}
+
+@media only screen and (max-widht: 768px){
+    .IG {
+        display: none;
+        margin: 0px 0px 0px 0px;
+        visibility: hidden;
+    }
+    
+    .habito-imagen {
+        margin-left: 0px;
+    }
+   
+   /* .menu > li > a{
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    color:black;
+    text-decoration:none;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    letter-spacing: 1px;
+    }*/
+
+    .boton-habitos {
+        display: none;
+    }
+}
+
+
+/*hola*/
