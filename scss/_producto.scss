@@ -1,0 +1,39 @@
+.contenedorproducto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+        
+    .fichaproducto {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc(33.33% - 0px);
+    margin-bottom: 2rem;
+        .imagenproducto {
+            width: 30%;
+            &:hover{
+            width: 35%;
+        }
+        
+        }
+        .textoproducto {
+            padding: 1rem 6rem;
+        }
+    }
+
+@media (max-width: 768px) {
+    flex-direction: column;
+    .fichaproducto {
+        width: 100%;
+        .textoproducto {
+        padding: 1rem;
+        }
+    }
+}
+}

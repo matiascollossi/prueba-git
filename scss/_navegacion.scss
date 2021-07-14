@@ -25,14 +25,11 @@
                 margin-right: 60px;
 
                 &:hover {
-                    color:rgb(85, 79, 79);
-                    background-color:none;
                     transition: all .2s;
                     border-bottom: solid 2px black;
-                    background-image: linear-gradient(to bottom, whitesmoke, rgb(237, 237, 237));
                 }
 
-                a {
+                span {
                     display: inline-block;
                     width: 120px;
                     height: 25px; 
